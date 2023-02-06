@@ -1,0 +1,20 @@
+{
+  "name": "mock-api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "products-db": "npx json-server --watch ./db/products.json --middlewares ./middlewares/id-middleware ./middlewares/img-middleware"
+  },
+  "keywords": [],
+  "author": "Guillermo Ortiz <gortizloza@planittesting.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "json-server": "^0.17.1",
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
